@@ -1,18 +1,18 @@
 <?php 
-	include("./bricks/1_head.php");
+	include("./bricks/head.php");
 
 
-	include("./bricks/2_search.php");
+	include("./bricks/search.php");
 
 
 
 	if(isset($_GET['question'])){
-	    include("./bricks/2_edit.php");
+	    include("./bricks/edit.php");
 	} else {
 	    header("Location: ../");
 	}
 
 
 
-	include("./bricks/3_foot.php");
+	include("./bricks/foot.php");
 ?>
