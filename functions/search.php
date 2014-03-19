@@ -46,7 +46,7 @@ function drawSearchResults($tag){
     $results = search($tag);
 	if($results == Null){
 	    echo("Leider sind keine Ergebnisse vorhanden!");
-		include("./bricks/2_ask.php");
+		include("./bricks/ask.php");
 		return;
 	}
 	foreach($results as $result){

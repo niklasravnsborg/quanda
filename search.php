@@ -1,19 +1,15 @@
 <?php 
-include("./bricks/1_head.php");
-?>
-<?php 
-include("./bricks/2_search.php");
-?>
+	include("./bricks/head.php");
+	include("./bricks/search.php");
 
-<?php
-if(isset($_GET['search'])){
-    include("./functions/search.php");
-    drawSearchResults($_GET['search']);
-} else {
-    header("Location: ../");
-}
-?>
 
-<?php
-include("./bricks/3_foot.php");
+	if(isset($_GET['search'])){
+	    include("./functions/search.php");
+	    drawSearchResults($_GET['search']);
+	} else {
+	    header("Location: ../");
+	}
+
+
+	include("./bricks/foot.php");
 ?>
