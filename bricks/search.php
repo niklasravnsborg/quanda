@@ -1,4 +1,6 @@
-<form action="search.php">
-	<input name="search" type="text" class="search_box">
-	<input type="submit" value="Search" class="search_button">
-</form>
+<div id="searchbox">
+	<form action="index.php">
+		<input class="search-box" name="search" type="text" >
+		<input class="search-button" type="submit" value="">
+	</form>	
+</div><!--searchbox-->

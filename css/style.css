@@ -23,7 +23,7 @@ body {
 	
 	padding: 20px;
 	height: 400px;
-    width: 300px;
+    	width: 300px;
 	
 	background-color: white;
 	border: 2px solid grey;
@@ -103,18 +103,32 @@ footer li {
 	width: 50%;
 }
 
-#search input {
-	width: 100%;
+.search-box {
+	width: 420px;
 	
 	font-weight: bold;
 	
 	border: 0 none;
 	border-radius: 8px;
-	
-	background: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-16.png) no-repeat 10px 6px #f6f6f6;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-	padding: 6px 15px 6px 35px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.4) inset;
+	padding: 6px;
 	margin: 0 0 0 -25px;
+	
+	
+}
+
+.search-button {
+	
+	height: 27px;
+	width: 27px;
+	background: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-16.png) no-repeat 5px 5px #f6f6f6;
+	
+	background-color: white;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.4) inset;
+	
+
 }
 
 

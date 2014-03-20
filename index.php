@@ -9,11 +9,11 @@
 		
 		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
 		
-<!--		<base href="" />-->
+		<!--<base href="" />-->
 
-<!--		<meta name="description" content="">-->
-<!--		<meta name="author" content="">-->
-<!--		<meta name="keywords" content="">-->
+		<!--<meta name="description" content="">-->
+		<!--<meta name="author" content="">-->
+		<!--<meta name="keywords" content="">-->
 
 		<meta http-equiv="content-language" content="en">
 
@@ -37,10 +37,7 @@
 					Menu
 				</div><!--menubutton-->
 			
-				
-				<?php 
-					include("./layout/menu.php");
-				?>
+				<?php include("./layout/menu.php"); ?>
 				
 			</div><!--topbar-->
 
@@ -50,16 +47,12 @@
 					<p>simple, fast, esay</p>
 				</div><!--logo-->
 
-				<div id="searchbox">
-					<form method="get" action="/search" id="search">
-						<input name="q" type="text" size="40" placeholder="Ask or search a question..." />
-					</form>
-				</div><!--searchbox-->
 				
 				
 				
-				<!-- Hier bitte die verschiedenen Bricks einbauen -->				
 				
+				<?php include("./bricks/search.php") ?>
+				<?php include("./search.php") ?>
 				
 				
 			
