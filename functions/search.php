@@ -56,7 +56,25 @@ function drawSearchResults($tag){
 		} else {
 			$answ = "Answered";
 		}
-		echo("<div class='search_result'><p class='result_title'><a href='http://".$_SERVER['HTTP_HOST']."/quanda_v2/view.php?question=".$result['QID']."'>".$result['title']."</a> ".$answ."</p><p class='result_date'>".$result['timestamp']."</p><p class='result_text'>".$result['question']."</p></div>");
+		echo("
+			<div class='searchresult'>
+				
+				<!-- question -->
+				<h2> ".$result['title']." </h2> 
+				
+				<!-- answer -->
+				<p> ".$result['question']." </p>
+				
+				
+				
+				<!-- unused:
+					<p class='date'> ".$result['timestamp']." </p>
+					<a href='http://".$_SERVER['HTTP_HOST']."/quanda_v2/view.php?question=".$result['QID']."'>".$result['title']."</a>
+					".$answ."
+				-->
+				
+			</div>
+		");
 	}
 }
 ?>

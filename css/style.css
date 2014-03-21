@@ -1,3 +1,8 @@
+/******** GLOBAL SETS ********/
+body {
+	font-family: Arial, Sans;
+}
+
 h1 {
 	font-size: 200%;
 	font-weight: bold;
@@ -5,8 +10,18 @@ h1 {
 	color: rgb(40,40,40);
 }
 
-body {
-	font-family: Arial, Sans;
+
+
+/******** TOPBAR ********/
+#topbar {
+	position: fixed;
+	top: 0;
+	padding: 20px;
+	
+	width: 100%;
+	height: 20px;
+	
+	background: lightgrey;
 }
 
 #menubutton {
@@ -23,22 +38,28 @@ body {
 	
 	padding: 20px;
 	height: 400px;
-    	width: 300px;
+		width: 300px;
 	
 	background-color: white;
 	border: 2px solid grey;
 	display: none;
 }
 
+
+
+/******** FOOTER ********/
 footer {
-    background-color: lightgrey;
+	background-color: lightgrey;
 }
 
 footer li {
-    display: inline-block;
-    margin-right: 20px;
+	display: inline-block;
+	margin-right: 20px;
 }
 
+
+
+/******** CONTENT ********/
 #content {
 	position: relative;
 	
@@ -62,20 +83,12 @@ footer li {
 	margin: auto;
 }
 
-#topbar {
-	position: fixed;
-	top: 0;
-	padding: 20px;
-	
-	width: 100%;
-	height: 20px;
-	
-	background: lightgrey;
-}
 
+
+/******** LOGO ********/
 #logo {
 	position: relative;
-	/*display: inline-block;*/ width: 300px;
+	width: 300px;
 	
 	left: 50%;
 	margin: 0 0 0 -150px;
@@ -96,6 +109,9 @@ footer li {
 	color: grey;
 }
 
+
+
+/******** SEARCH ********/
 #searchcontainer {
 	float: inherit;
 	margin: auto;
@@ -114,11 +130,10 @@ footer li {
 	padding: 6px;
 	margin: 0 0 0 -25px;
 	
-	
+	margin-bottom: 40px;
 }
 
 .search-button {
-	
 	height: 27px;
 	width: 27px;
 	background: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-16.png) no-repeat 5px 5px #f6f6f6;
@@ -127,9 +142,31 @@ footer li {
 	border: none;
 	border-radius: 8px;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.4) inset;
-	
-
 }
+
+
+
+/******** SEARCHRESULTS ********/
+.searchresult {
+	margin-bottom: 20px;
+	color: rgb(20%, 20%, 20%);
+}
+
+.searchresult h2{
+	font-size: 1.8em;
+}
+
+.searchresult p{
+	font-size: 1em;
+}
+
+
+
+
+
+
+
+
 
 
 
