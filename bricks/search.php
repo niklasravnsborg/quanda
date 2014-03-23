@@ -1,6 +1,6 @@
-<div id="searchbox">
+<div id="search">
 	<form action="index.php">
-		<input class="search-box" name="search" type="text" placeholder="Ask or search a question..." />
-		<input class="search-button" type="submit" value="" />
+		<input id="input" name="search" type="text" placeholder="Ask or search a question..." />
+		<input id="button" type="submit" value="" />
 	</form>	
 </div><!--searchbox-->

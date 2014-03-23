@@ -31,33 +31,25 @@
 	</head>
 
 	<body>
-		<div id="wrapper">
-			<div id="topbar">
-				<div id="menubutton">
-					Menu
-				</div><!--menubutton-->
-			
-				<?php include("./layout/menu.php"); ?>
-				
-			</div><!--topbar-->
+		<header>
+			<div id="menubutton">
+				Menu
+			</div><!--menubutton-->
+		
+			<?php include("./layout/menu.php"); ?>	
+		</header>
 
-			<div id="content">
-				<div id="logo">
-					<h1>Question & Answer</h1>
-					<p>simple, fast, esay</p>
-				</div><!--logo-->
-
-				
-				
-				
-				
-				<?php include("./bricks/search.php") ?>
-				<?php include("./search.php") ?>
-				
-				
+		<main>
+			<div id="logo">
+				<h1>Question & Answer</h1>
+				<p>simple, fast, esay</p>
+			</div><!--logo-->
 			
-			</div><!--content-->
-		</div>
+			<?php include("./bricks/search.php") ?>
+			<?php include("./search.php") ?>
+			
+		</main>
+		
 	</body>
 </html>
 
