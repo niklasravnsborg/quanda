@@ -26,7 +26,7 @@ function search($tag){
 	  }
 	}
 	
-	$tids = mysql_query("SELECT QID, title, question, timestamp, answer FROM questions WHERE tags LIKE ".$mysqltags, $connid);
+	$tids = mysql_query("SELECT QID, question, timestamp, answer FROM questions WHERE tags LIKE ".$mysqltags, $connid);
 	if(!$tids) die('TABLE ERROR');
 	while($tmp = mysql_fetch_array($tids)) {
 	  $alltags[$tmp['QID']] = $tmp;
@@ -60,10 +60,10 @@ function drawSearchResults($tag){
 			<div class='searchresult'>
 				
 				<!-- question -->
-				<h2> ".$result['title']." </h2> 
+				<h2> ".$result['question']." </h2> 
 				
 				<!-- answer -->
-				<p> ".$result['question']." </p>
+				<p> ".$result['answer']." </p>
 				
 				
 				
