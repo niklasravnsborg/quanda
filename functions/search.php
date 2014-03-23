@@ -57,12 +57,13 @@ function drawSearchResults($tag){
 		echo("
 			<div class='searchresult'>
 				
-				<!-- question -->
-				<h2> ".$result['question']." </h2> 
+				<div class='question'>
+					<p> ".$result['question']." </p> 
+				</div>
 				
-				<!-- answer -->
-				<p> ".$result['answer']." </p>
-				
+				<div class='answer'>
+					<p> ".$result['answer']." </p>
+				</div>
 				
 				
 				<!-- unused:
