@@ -52,9 +52,7 @@ function drawSearchResults($tag){
 	foreach($results as $result){
 		$answ = "";
 	    if($result['answer'] == ''){
-		    $answ = "No answer!";
-		} else {
-			$answ = "Answered";
+		    $result['answer'] = "No answer!";
 		}
 		echo("
 			<div class='searchresult'>
