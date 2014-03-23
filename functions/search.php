@@ -69,7 +69,7 @@ function drawSearchResults($tag){
 				
 				<!-- unused:
 					<p class='date'> ".$result['timestamp']." </p>
-					<a href='http://".$_SERVER['HTTP_HOST']."/quanda_v2/view.php?question=".$result['QID']."'>".$result['title']."</a>
+					<a href='http://".$_SERVER['HTTP_HOST']."/quanda_v2/view.php?question=".$result['QID']."'>".$result['question']."</a>
 					".$answ."
 				-->
 				
