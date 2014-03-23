@@ -1,11 +1,11 @@
 <!doctype html>
 
-<html>
+<html lang="en-us">
 	<head>
 		<title>Quanda</title>
 		
 		<meta name="robots" content="noindex, nofollow" />
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		
 		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
 		
@@ -17,8 +17,8 @@
 
 		<meta http-equiv="content-language" content="en">
 
-		<link rel="stylesheet" type="text/css" href="./css/reset.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css" />
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>

@@ -62,7 +62,7 @@ footer li {
 main {
     position: relative;
     
-    width: 800px;
+    width: 900px;
     height: auto;
     
     margin: auto;
@@ -101,25 +101,40 @@ main {
 #search {
     margin: 0 auto;
     width: 463px;
+    height: 50px; 
+    margin-bottom: 40px;
+   
 }
 
-#search #input {
-    width: 420px;
+#search input[type="text"] {
+    vertical-align:middle;
     
+    width: 420px;
+    height: 15px;
+   
     font-weight: bold;
     
     border: 0 none;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset;
-    padding: 6px;
     
-    margin-bottom: 40px;
+
+    padding: 6px;
+   
+    outline: 0;
+    
+    display: inline-block;
 }
 
-#search #button {
+#search input[type="submit"] {
+    vertical-align:middle;
+ 
     height: 27px;
     width: 27px;
+   
     background: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-16.png) no-repeat 5px 5px #f6f6f6;
+
+    outline: 0;
     
     background-color: white;
     border: none;
@@ -131,15 +146,18 @@ main {
 
 /******** SEARCHRESULTS ********/
 .searchresult {
-    margin-bottom: 20px;
-    width: 800px;
-    overflow: hidden;
+    margin-bottom: 30px;
     
-    color: rgb(20%, 20%, 20%);
+    height: 150px;
+    width: 100%;
+    
+ position: relative;
+    
+    
 }
 
 .searchresult .question{
-    width: 395px;
+    width: 442px;
     height: 150px;
     
     padding: 10px;
@@ -147,28 +165,31 @@ main {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    float: left;  
+   
+    float: left;
+
+   
     
-/*    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);*/
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
     
-    background-color: lightgrey;
 }
 
 .searchresult .answer{
-    width: 395px;
+    width: 442px;
     height: 150px;
     
     padding: 10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
-    float: right;
-        
-/*    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);*/
-    
-    background-color: lightgrey;
+     float: right;
+  
+  
+   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+
 }
+
+
 
 
 
