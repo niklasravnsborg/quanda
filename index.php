@@ -1,24 +1,23 @@
 <!doctype html>
-
 <html lang="en-us">
 	<head>
 		<title>Quanda</title>
 		
-		<meta name="robots" content="noindex, nofollow" />
+		<meta name="robots" content="noindex, nofollow">
 		<meta charset="UTF-8">
-		
-		<link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
-		
+		<meta http-equiv="content-language" content="en">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
 		<!--<base href="" />-->
 
 		<!--<meta name="description" content="">-->
 		<!--<meta name="author" content="">-->
 		<!--<meta name="keywords" content="">-->
-
-		<meta http-equiv="content-language" content="en">
+		
+		<link rel="shortcut icon" href="./favicon.png">
 
 		<link rel="stylesheet" href="./css/reset.css">
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/style.css">
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script>
@@ -31,6 +30,7 @@
 	</head>
 
 	<body>
+	
 		<header>
 			<div id="menubutton">
 				Menu
