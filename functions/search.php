@@ -9,7 +9,7 @@ function search($tag){
 	$mysqltags = "";
 	if(count($tags)<2)
 	{
-	  $mysqltags = "'%".$tags[0]."%'";
+	  $mysqltags = "'%".strtolower($tags[0])."%'";
 	}
 	else
 	{ 
@@ -17,16 +17,16 @@ function search($tag){
 	  $f = count($tags)-1;
 	  foreach($tags as $t)
 	  { 
-	    $mysqltags = $mysqltags."'%".$t."%'";
+	    $mysqltags = $mysqltags."'%".strtolower($t)."%'";
 		if($f > $c)
 		{
-		  $mysqltags = $mysqltags.' OR tags LIKE ';
+		  $mysqltags = $mysqltags.' OR LOWER(question) LIKE ';
 		}
 		$c += 1;
 	  }
 	}
 	
-	$tids = mysql_query("SELECT QID, question, timestamp, answer FROM questions WHERE tags LIKE ".$mysqltags, $connid);
+	$tids = mysql_query("SELECT QID, question, timestamp, answer FROM questions WHERE LOWER(question) LIKE ".$mysqltags, $connid);
 	if(!$tids) die('TABLE ERROR');
 	while($tmp = mysql_fetch_array($tids)) {
 	  $alltags[$tmp['QID']] = $tmp;
@@ -56,7 +56,8 @@ function drawSearchResults($tag){
 		}
 		echo("
 			<div class='searchresult'>
-				
+				<p class='question'> ".$result['question']." </p> 
+				<p class='answer'> ".$result['answer']." </p>
 				<div class='question'>
 					<p> ".$result['question']." </p> 
 				</div>
