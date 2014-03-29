@@ -36,17 +36,21 @@
 				Menu
 			</div><!--menubutton-->
 		
-			<?php include("./layout/menu.php"); ?>	
+			
 		</header>
+		<?php include("./layout/menu.php"); ?>	
 
 		<main>
-			<div id="logo">
-				<h1>Question & Answer</h1>
-				<p>simple, fast, esay</p>
-			</div><!--logo-->
+			<div class="inner">
 			
-			<?php include("./bricks/search.php") ?>
-			<?php include("./search.php") ?>
+				<div id="logo">
+					<h1>Question & Answer</h1>
+					<p>simple, fast, esay</p>
+				</div><!--logo-->
+
+				<?php include("./bricks/search.php") ?>
+				<?php include("./search.php") ?>
+			</div> <!-- .inner -->
 			
 		</main>
 		
