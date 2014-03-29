@@ -37,7 +37,7 @@
 
 	
 	function drawSearchResults($tag) {
-		$results = search($tag);
+		$results = search(mysql_escape_string($tag));
 		if($results == Null){
 			echo("Your question is asked!");
 			include("./functions/write.php");
