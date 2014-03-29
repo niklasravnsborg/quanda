@@ -42,6 +42,7 @@
 			echo("Your question is asked!");
 			include("./functions/write.php");
 			write($_GET['search']);
+			header("Location: index.php?search=".$_GET['search']);
 			return;
 		}
 
