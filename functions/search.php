@@ -39,11 +39,12 @@
 	function drawSearchResults($tag) {
 		$results = search($tag);
 		if($results == Null){
-			echo("Sorry, no results.");
-			include("./bricks/ask.php");
+			echo("Your question is asked!");
+			include("./functions/write.php");
+			write($_GET['search']);
 			return;
 		}
-	
+
 		foreach($results as $result) {
 			$answ = "";
 			if($result['answer'] == '') {

@@ -1,9 +1,9 @@
 <?php
-	include("database.php");
+	#include("database.php");
 
-	function write($title, $question, $tags) {
+	function write($question) {
 		$connid = connect();
-		$wrt = mysql_query("INSERT INTO questions (QID, timestamp, question, answer, title, tags) VALUES (NULL, CURRENT_TIMESTAMP, '".$question."', '', '".$title."', '".$tags."')", $connid);
+		$wrt = mysql_query("INSERT INTO questions (QID, timestamp, question, answer) VALUES (NULL, CURRENT_TIMESTAMP, '".$question."', '')", $connid);
 		if(!$wrt) die('TABLE ERROR');
 
 		return;
